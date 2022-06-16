@@ -164,8 +164,6 @@ def Filter(sigma):
 
 #GaussianBlurImage function implementation 
 
-
-
 def GaussianBlurImage(image, sigma):
     
     #open the original image
@@ -216,10 +214,8 @@ def GaussianBlurImage(image, sigma):
     
 #Driver/Testing codes 
     
-
-
-    
-im = Image.open('hw1_data/Seattle.jpg')
+ 
+im = Image.open('Seattle.jpg')
 
 #show image 
 
@@ -231,7 +227,7 @@ plt.imshow(im)
 #Gaussian blur the image ”Seattle.jpg” with a sigma of 4.0, and save as ”1.png”. 
     
 
-a = GaussianBlurImage('hw1_data/Seattle.jpg', 4.0)
+a = GaussianBlurImage('Seattle.jpg', 4.0)
 
 plt.imshow(a)
 
@@ -239,16 +235,12 @@ plt.imsave('1.png',a)
 
 
 
-
-
-
-
-#Written Assignment 1 extra tests:
+#extra tests:
 
 
 #try sigma = 2.0 
 
-b = GaussianBlurImage('hw1_data/Seattle.jpg', 2.0)
+b = GaussianBlurImage('Seattle.jpg', 2.0)
 
 plt.imshow(b)
 
@@ -258,25 +250,17 @@ plt.imsave('SigmaIs2.png',b)
 
 #try sigma = 8.0
 
-c = GaussianBlurImage('hw1_data/Seattle.jpg', 8.0)
+c = GaussianBlurImage('Seattle.jpg', 8.0)
 
 plt.imshow(c)
 
 plt.imsave('SigmaIs8.png',c)
 
 
-
-
 #try sigma = 32
     
-d = GaussianBlurImage('hw1_data/Seattle.jpg', 32.0)
+d = GaussianBlurImage('Seattle.jpg', 32.0)
 
 plt.imshow(d)
 
 plt.imsave('SigmaIs32.png',d)
-
-
-
-    
-    
-    
